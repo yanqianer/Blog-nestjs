@@ -28,7 +28,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
       password: configService.get<string>('DATABASE_PASSWORD'),
       database: 'nodejs',
       synchronize: true,
-      autoLoadEntities: true,
+      autoLoadEntities: true,//自动加载实体
     })
    
   }), AdminModule, ArticleModule, CommentModule, UploadModule, AnonymousModule, PostModule,
